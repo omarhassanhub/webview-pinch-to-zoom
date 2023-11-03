@@ -8,7 +8,7 @@ This problem impacts all pages containing a WebView within our app. We've attemp
 #### Reasons for destroying a webview:
 * Destroy a WebView when it's no longer needed
 * Destroy it in the `onDestroy` or `onDestroyView` methods to prevent memory leaks and ensure proper cleanup when the user navigates away from the WebView.
-* During the restoration process, the WebView is destroyed and then reconfigured.
+* During the back navigation process, the old WebView in what was the top fragment is destroyed, the lower fragment is restored, and in this way a new WebView instance is configured.
 
 The following configurations does not prevent zoom after a webview is destroyed:
 ```

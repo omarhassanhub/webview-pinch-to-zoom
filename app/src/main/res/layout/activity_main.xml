@@ -8,7 +8,7 @@
         android:id="@+id/openFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open webview" />
+        android:text="Add webview" />
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
